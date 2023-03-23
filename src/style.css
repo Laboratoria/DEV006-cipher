@@ -179,7 +179,7 @@ top: 100px;
 .redes {
   position: absolute;
   left: 850px;
-top: 570px;
+top: 580px;
   flex-wrap:row;
   background-color: white;
 }
@@ -188,7 +188,7 @@ top: 570px;
   position: absolute;
   width: 1440px;
   left: 0px;
-  height: 50px;
+  height: 70px;
   top: 570px;
   background: #F6F1F1;
   z-index: 1;
@@ -214,7 +214,7 @@ position: absolute;
 width: 426px;
 height: 30px;
 left: 500px;
-top: 580px;
+top: 585px;
 z-index: 2;
 
 font-family: 'Droid Sans';
@@ -229,7 +229,7 @@ line-height: 30px;
   position: absolute;
   z-index: 3;
   left: 50px;
-  margin right: 7%;
+  margin-right: 7%;
   top: 4px;
   width: 45px;
   height: 35px;
@@ -243,7 +243,7 @@ line-height: 30px;
   width: 45px;
   height: 35px;
   left: 100px;
-  margin right: 7%;
+  margin-right: 7%;
   top: 4px;
  
 }
@@ -254,7 +254,7 @@ line-height: 30px;
   width: 45px;
   height: 35px;
   left: 150px;
-  margin right: 100px;
+  margin-right: 100px;
   top: 4px;
   
 }
@@ -310,7 +310,7 @@ z-index:1;
   position: absolute;
   width: 1440px;
   left: 0px;
-  height: 50px;
+  height: 70px;
   top: 570px;
   background: #F6F1F1;
   z-index: 1;
@@ -318,8 +318,8 @@ z-index:1;
 
 p1{
   position: absolute;
-  left: 480px;
-  top: 150px;
+  left: 400px;
+  top: 130px;
   font-weight: 700;
   font-size: 20px;
 }
@@ -448,7 +448,7 @@ z-index:1;
   position: absolute;
   width: 1440px;
   left: 0px;
-  height: 50px;
+  height: 70px;
   top: 570px;
   background: #F6F1F1;
   z-index: 1;
@@ -544,4 +544,15 @@ font-size: 20px;
 line-height: 29px;
 color: #F6F1F1;
 
+}
+
+p15{
+  position: absolute;
+  left: 400px;
+  top: 160px;
+  font-weight: 700;
+  font-size: 13px;
+  inline-size: 500px;
+  overflow-wrap: break-word;
+  
 }

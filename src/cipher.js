@@ -1,77 +1,100 @@
 
-function shiftLetter (letter,shift){
-    let newLetter="";
+// function shiftLetter (letter,shift){
+//   let newLetter="";
 
-   let letterCode=letter.charCodeAt(0);
-    let newLetterCode= (letterCode+ shift-65) % 26 +65 ;
+//   const letterCode=letter.charCodeAt(0);
+//   let newLetterCode= (letterCode+ shift-65) % 26 +65 ;
 
-     if (newLetterCode<97){
-       newLetter+=26;
-    }else if(newLetterCode>122){
-      newLetterCode-=26;
-    }
-    newLetter=String.fromCharCode(newLetterCode);
+//   if (newLetterCode<97){
+//     newLetter+=26;
+//   }else if(newLetterCode>122){
+//     newLetterCode-=26;
+//   }
+//   newLetter=String.fromCharCode(newLetterCode);
 
-return newLetter;
-}
+//   return newLetter;
+// }
 
 function shiftLetter2 (letter2,shift2){
   let newLetter2="";
 
- let letterCode2=letter2.charCodeAt(0);
+  const letterCode2=letter2.charCodeAt(0);
   let newLetterCode2= (letterCode2- shift2+65) % 26 +65 ;
 
-   if (newLetterCode2<97){
-     newLetter2+=26;
+  if (newLetterCode2<97){
+    newLetterCode2+=26;
   }else if(newLetterCode2>122){
     newLetterCode2-=26;
   }
   newLetter2=String.fromCharCode(newLetterCode2);
 
-return newLetter2;
+  return newLetter2;
 }
 
- const cipher={
-   encode:function(message,shift){
 
-    
-        let encryptedMessage= "";    
-      let shift2= shift ? Number (shift):0;
-      
-          for(const letter of message){
-            encryptedMessage += shiftLetter(letter,shift2);
-           }
-      
-          return encryptedMessage;
-          
-           
-      
-        },
-        decode:function(message2,shift2){
-          let encryptedMessage2="";
-          let shift3=  shift2 ? Number (shift2):0;
 
-          for(let letter2 of message2){
-            encryptedMessage2+=shiftLetter2(letter2,shift3);
-          }
 
-          return encryptedMessage2;
+const cipher = {
+  encode: function(message, shift) {
+    let encryptedMessage = "";
+
+    console.log(typeof shift)
+
+    const listletters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+
+    for ( const letter of message) {
+      if (!listletters.includes(letter)) {
+        console.log("ok");
+      }else{
+        let newLetter="";
+
+        const letterCode=letter.charCodeAt(0);
+        let newLetterCode= (letterCode+ shift-65) % 26 +65 ;
+
+
+        if(newLetterCode>122){
+          newLetterCode-=26;
         }
-}
+        newLetter=String.fromCharCode(newLetterCode);
+
+        encryptedMessage+=newLetter;
+
+        console.log(encryptedMessage);
+      }}
+    console.log(encryptedMessage);
+    return encryptedMessage;
+  },
+  decode: function(message2, shift2) {
+    let encryptedMessage2 = "";
 
 
-  export default cipher;  
-  
+    const arreglo2 =message2.split("")
+    console.log(message2.split(""))
+    const listletters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    for ( const letter2 of arreglo2) {
+      if (!listletters.includes(letter2)) {
+        continue;
+      }
+      encryptedMessage2 += shiftLetter2(letter2, shift2);
+    }
 
-  
-  
+    return encryptedMessage2;
+  },
+};
 
-  
+export default cipher;
 
-  
 
-   
-  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,4 +151,4 @@ return newLetter2;
 // //    }
 // // return resultadoCifrado
 // //    }
-   
+
