@@ -4,6 +4,9 @@
 
 * 1. Descripción del proyecto
 * 2. Diseño
+       -Prototipo de baja
+       -Prototipo de alta
+       -Producto final
 * 3. Funciones y aplicaciones
 * 4. Consideraciones generales
 
@@ -20,6 +23,12 @@ El cifrado y descifrado están basados en el cifrado de Cesar, un antigua métod
 
 El diseño de la aplicación se pensó con una interfaz amigable e intuitiva para el usuario. Inicialmente se muestra un breve resumen de lo que hace la organización además de una pequeña introducción a lo que hace la aplicación, además del logo de la organización que presenta el mensaje "Empowering voices, securing rights" aludiendo al objetivo principal de la aplicación que es la comunicación. En la parte superior se encuentrar varios enlaces en los cuales el usuario puede contactar a la organización, conocer más de ella etc. y en la parte inferior se encuentran enlaces para las redes sociales de la misma. Al lado derecho se encuentran los botones que permiten que el usuario escoja si desea cifrar o descifrar, y dependiendo de lo que escoja lo llevara a una pagina donde puede insertar el texto y el desplazamiento para cifrar o descifrar.
 
+
+
+  -Prototipo de baja fidelidad
+  
+  
+  
 ## 3. Funciones y aplicaciones
 
 Human Rights CIPHER fue creado con la función de cifrar o descifrar un mensaje según el usuario lo desee. En la interfaz principal, el usuario debe escoger si desea cifrar o descifrar un mensaje. Después de escoger, se encontrará con otra interfaz que le indicará que debe escribir un mensaje y más abajo escribir el número de desplazamientos que hagan las letras según su posición en el abecedario.Posteriormente, debe hacer clic en el botón "cifrar" y aparecerá su mensaje cifrado. Por ejemplo, si el usuario desea cifrar la palabra "HOLA" debe insertar el mensaje en el primer cuadro de texto. Luego, en el segundo cuadro las posiciones a las cuales desea que el mensaje se cifre, usaremos "1" en este caso. Deberá oprimir el botón y en el último cuadro de texto le aparecerá su mensaje cifrado: "IPMB".
