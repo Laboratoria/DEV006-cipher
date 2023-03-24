@@ -3,7 +3,7 @@
 ## Índice
 
 * 1. Descripción del proyecto
-* [2. Diseño]
+* 2. Diseño
 * 3. Funciones y aplicaciones
 * 4. Consideraciones generales
 
