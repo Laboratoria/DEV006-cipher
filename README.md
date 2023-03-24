@@ -58,7 +58,7 @@ El diseño de la aplicación se pensó con una interfaz amigable e intuitiva par
    Este fue el producto final:
    
 ![Productofinal1](https://user-images.githubusercontent.com/116685936/227590665-a464d46d-b513-41b8-80a6-e632416cc112.png)
-![Productofinal2](https://user-images.githubusercontent.com/116685936/227590676-8cb6419e-6f62-47ae-904c-da9c3d2dfa72.png)
+![Productofinal2](https://user-images.githubusercontent.com/116685936/227591479-ae2f2eba-51ff-4f5e-8078-3fd75a53fcbe.png)
 ![Productofinal3](https://user-images.githubusercontent.com/116685936/227590694-b09713e8-16cc-48ad-bb52-64d7315af5cf.png)
 
   
