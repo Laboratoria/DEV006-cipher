@@ -15,21 +15,21 @@
 //   return newLetter;
 // }
 
-function shiftLetter2 (letter2,shift2){
-  let newLetter2="";
+// function shiftLetter2 (letter2,shift2){
+//   let newLetter2="";
 
-  const letterCode2=letter2.charCodeAt(0);
-  let newLetterCode2= (letterCode2- shift2+65) % 26 +65 ;
+//   const letterCode2=letter2.charCodeAt(0);
+//   let newLetterCode2= (letterCode2- shift2+65) % 26 +65 ;
 
-  if (newLetterCode2<97){
-    newLetterCode2+=26;
-  }else if(newLetterCode2>122){
-    newLetterCode2-=26;
-  }
-  newLetter2=String.fromCharCode(newLetterCode2);
+//   if (newLetterCode2<97){
+//     newLetterCode2+=26;
+//   }else if(newLetterCode2>122){
+//     newLetterCode2-=26;
+//   }
+//   newLetter2=String.fromCharCode(newLetterCode2);
 
-  return newLetter2;
-}
+//   return newLetter2;
+// }
 
 
 
@@ -68,20 +68,34 @@ const cipher = {
   decode: function(message2, shift2) {
     let encryptedMessage2 = "";
 
+    console.log(typeof shift)
 
-    const arreglo2 =message2.split("")
-    console.log(message2.split(""))
-    const listletters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-    for ( const letter2 of arreglo2) {
+    const listletters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+
+    for ( const letter2 of message2) {
       if (!listletters.includes(letter2)) {
-        continue;
-      }
-      encryptedMessage2 += shiftLetter2(letter2, shift2);
-    }
+        console.log("ok");
+      }else{
+        let newLetter2="";
 
+        const letterCode2=letter2.charCodeAt(0);
+        let newLetterCode2= (letterCode2- shift2+65) % 26 +65 ;
+
+
+        if(newLetterCode2>122){
+          newLetterCode2-=26;
+        }
+        newLetter2=String.fromCharCode(newLetterCode2);
+
+        encryptedMessage2+=newLetter2;
+
+        console.log(encryptedMessage2);
+      }}
+    console.log(encryptedMessage2);
     return encryptedMessage2;
-  },
-};
+    }
+  }
 
 export default cipher;
 
