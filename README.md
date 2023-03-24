@@ -2,13 +2,13 @@
 
 ## Índice
 
-* 1. Descripción del proyecto
-* 2. Diseño
+### 1. Descripción del proyecto
+### 2. Diseño
        -Prototipo de baja
        -Prototipo de alta
        -Producto final
-* 3. Funciones y aplicaciones
-* 4. Consideraciones generales
+### 3. Funciones y aplicaciones
+### 4. Consideraciones generales
 
 
 ## 1. Descripción del proyecto
