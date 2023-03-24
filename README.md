@@ -26,6 +26,7 @@ El diseño de la aplicación se pensó con una interfaz amigable e intuitiva par
 
 
   -Prototipo de baja fidelidad
+  https://raw.githubusercontent.com/usuario/repositorio/rama/ruta/al/asset
   
   
   
